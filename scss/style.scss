@@ -1,0 +1,58 @@
+@use "reset";
+
+.navbar {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 1.25em;
+  position: relative;
+  .row {
+    cursor: pointer;
+    .bar {
+      background-color: black;
+      height: 6px;
+      margin: 4px 0;
+      width: 35px;
+      z-index: 100;
+    }
+  }
+}
+
+header {
+  max-width: 600px;
+}
+
+.menu {
+  background-color: rgb(240, 77, 77);
+  height: 80vh;
+  left: 50%;
+  padding: 3em 1em;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+
+  li {
+    margin: 20px 0;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+// .active .bar2 {
+//   display: none;
+// }
+
+.active--bar1 {
+  transform: translate(0px, 11px) rotate(44deg);
+}
+.active--bar2 {
+  transform: translate(0px, 1px) rotate(315deg);
+}
